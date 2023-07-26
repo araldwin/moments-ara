@@ -7,9 +7,6 @@ import SignUpForm from "./pages/auth/SignUpForm";
 import SignInForm from "./pages/auth/SignInForm";
 import PostCreateForm from "./pages/posts/PostCreateForm";
 
-
-
-
 function App() {
   return (
     <div className={styles.App}>
