@@ -7,14 +7,16 @@ import { BrowserRouter as Router } from "react-router-dom";
 import { CurrentUserProvider } from "./contexts/CurrentUserContext";
 
 ReactDOM.render(
-  <React.StrictMode>
-    <Router>
-      <CurrentUserProvider>
-        <App />
-      </CurrentUserProvider>
-    </Router>
-  </React.StrictMode>,
-  document.getElementById("root")
+	<React.StrictMode>
+		<Router>
+			<CurrentUserProvider>
+				<ProfileDataProvider>
+					<App />
+				</ProfileDataProvider>
+			</CurrentUserProvider>
+		</Router>
+	</React.StrictMode>,
+	document.getElementById("root")
 );
 
 // If you want to start measuring performance in your app, pass a function
